@@ -1,13 +1,10 @@
 // Input the code into your browser's console (Ctrl-Shift-I) on ourworldofpixels.com. This creates a random pixel pattern around where the mouse is.
-function random(x){
-return Math.abs(Math.sin(x)*10000)%1;
-}
 setInterval(function(){
 for(var j = 0; j < 16; j++){
 for(var i = 0; i < 16; i++){
 coordX = Math.floor(OWOP.mouse.worldX/16+(i-8));
 coordY = Math.floor(OWOP.mouse.worldY/16+(j-8));
-numr = random(coordX*coordY+69)*255;
-numg = random(coordX*coordY+420)*255;
-numb = random(coordX*coordY+1337)*255;
+numr = Math.abs(Math.sin(coordX*coordY+69)*2550000)%255;
+numg = Math.abs(Math.sin(coordX*coordY+420)*2550000)%255;
+numb = Math.abs(Math.sin(coordX*coordY+1337)*2550000)%255;
 OWOP.world.setPixel(coordX,coordY,[numr,numg,numb])}}},50);
