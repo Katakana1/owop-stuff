@@ -1,4 +1,4 @@
-// Input the code into your browser's console (Ctrl-Shift-I) on ourworldofpixels.com. This creates a checker board pattern around where the mouse is.
+// Input the code into your browser's console (Ctrl-Shift-I) on ourworldofpixels.com. This creates a random pixel pattern around where the mouse is.
 function random(x){
 (sin(x)*10000)%1;
 }
