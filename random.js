@@ -1,6 +1,6 @@
 // Input the code into your browser's console (Ctrl-Shift-I) on ourworldofpixels.com. This creates a random pixel pattern around where the mouse is.
 function random(x){
-(sin(x)*10000)%1;
+(Math.sin(x)*10000)%1;
 }
 setInterval(function(){
 for(var j = 0; j < 16; j++){
