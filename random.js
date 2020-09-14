@@ -4,7 +4,7 @@ for(var j = 0; j < 16; j++){
 for(var i = 0; i < 16; i++){
 coordX = Math.floor(OWOP.mouse.worldX/16+(i-8));
 coordY = Math.floor(OWOP.mouse.worldY/16+(j-8));
-numr = Math.abs((coordX*coordY+69)*(coordX*coordY+69)*2550000)%255;
-numg = Math.abs((coordX*coordY+420)*(coordX*coordY+69)*2550000)%255;
-numb = Math.abs((coordX*coordY+1337)*(coordX*coordY+69)*2550000)%255;
+numr = Math.abs((coordX*coordY+69)*(coordX*coordY+69)*10000)%255;
+numg = Math.abs((coordX*coordY+420)*(coordX*coordY+69)*10000)%255;
+numb = Math.abs((coordX*coordY+1337)*(coordX*coordY+69)*10000)%255;
 OWOP.world.setPixel(coordX,coordY,[numr,numg,numb])}}},50);
