@@ -6,7 +6,7 @@ function getColorFromCoords(x,y){
   return getColorFromNum(coordTransform(x,y));
 }
 function getColorFromNum(x){
-  return [(sin((x+420)/64)+1)*128,(sin((x+69)/192)+1)*128,(sin((x+1337)/128)+1)*128];
+  return [(Math.sin((x+420)/64)+1)*128,(Math.sin((x+69)/192)+1)*128,(Math.sin((x+1337)/128)+1)*128];
 }
 setInterval(function(){
   for(var j = 0; j < 16; j++){
