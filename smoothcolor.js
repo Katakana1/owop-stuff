@@ -1,4 +1,4 @@
-// Input the code into your browser's console (Ctrl-Shift-I) on ourworldofpixels.com. This creates a random pixel pattern around where the mouse is.
+// Input the code into your browser's console (Ctrl-Shift-I) on ourworldofpixels.com. This creates a relatively smooth pattern around where the mouse is.
 function coordTransform(x,y){
   return (2/3)*x+(1/3)*y;
 }
