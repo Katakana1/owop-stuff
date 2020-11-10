@@ -8,7 +8,7 @@ setInterval(function(){
       coordX = Math.floor(OWOP.mouse.worldX/16+(i-8));
       coordY = Math.floor(OWOP.mouse.worldY/16+(j-8));
       num = [Math.floor(random(coordX*coordY+69)*255),Math.floor(random(coordX*coordY+420)*255),Math.floor(random(coordX*coordY+1337)*255)];
-      OWOP.world.setPixel(coordX,coordY,[num[0],num[1],num[2]]);
+      OWOP.world.setPixel(coordX,coordY,num);
     }
   }
 },50);
