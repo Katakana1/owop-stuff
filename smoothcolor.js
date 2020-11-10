@@ -14,7 +14,7 @@ setInterval(function(){
       coordX = Math.floor(OWOP.mouse.worldX/16+(i-8));
       coordY = Math.floor(OWOP.mouse.worldY/16+(j-8));
       num = getColorFromCoords(coordX,coordY);
-      OWOP.world.setPixel(coordX,coordY,[num[0],num[1],num[2]]);
+      OWOP.world.setPixel(coordX,coordY,[Math.floor(num[0]),Math.floor(num[1]),Math.floor(num[2])]);
     }
   }
 },50);
