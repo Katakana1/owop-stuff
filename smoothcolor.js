@@ -8,7 +8,7 @@ setInterval(function(){
       X = Math.floor(OWOP.mouse.worldX/16+(i-8));
       Y = Math.floor(OWOP.mouse.worldY/16+(j-8));
       num = [Math.floor(smoothColor(X*0.666+Y*0.333,64,420)),Math.floor(smoothColor(X*0.666+Y*0.333,192,69)),Math.floor(smoothColor(X*0.666+Y*0.333,128,1337))];
-      OWOP.world.setPixel(coordX,coordY,num);
+      OWOP.world.setPixel(X,Y,num);
     }
   }
 },50);
