@@ -7,7 +7,7 @@ setInterval(function(){
     for(var i = 0; i < 16; i++){
       X = Math.floor(OWOP.mouse.worldX/16+(i-8));
       Y = Math.floor(OWOP.mouse.worldY/16+(j-8));
-      num = [Math.floor(smoothColor((X+Y)/10)*255),Math.floor(smoothColor((X+Y)/10)*255),Math.floor(smoothColor((X+Y)/10)*255)];
+      num = [Math.floor(smoothColor(X+Y)*255),Math.floor(smoothColor(X+Y)*255),Math.floor(smoothColor(X+Y)*255)];
       OWOP.world.setPixel(X,Y,num);
     }
   }
