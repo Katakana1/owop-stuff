@@ -2,10 +2,10 @@
 setInterval(function(){
   for(var j = 0; j < 16; j++){
     for(var i = 0; i < 16; i++){
-      X = Math.floor(OWOP.mouse.worldX/16+(i-8));
-      Y = Math.floor(OWOP.mouse.worldY/16+(j-8));
-      num = Math.abs(X*Y)%256;
-      OWOP.world.setPixel(X,Y,[num,num,num]);
+      coordX = Math.floor(OWOP.mouse.worldX/16+(i-8));
+      coordY = Math.floor(OWOP.mouse.worldY/16+(j-8));
+      num = Math.abs(coordX*coordY)%256;
+      OWOP.world.setPixel(coordX,coordY,[num,num,num]);
     }
   }
 },50);
