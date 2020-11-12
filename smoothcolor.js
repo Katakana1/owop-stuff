@@ -4,8 +4,8 @@ setInterval(function(){
     for(var i = 0; i < 16; i++){
       X = Math.floor(OWOP.mouse.worldX/16+(i-8));
       Y = Math.floor(OWOP.mouse.worldY/16+(j-8));
-      num = [Math.abs(X*Y)%256,Math.abs(X*Y)%256,Math.abs(X*Y)%256];
-      OWOP.world.setPixel(X,Y,num);
+      num = Math.abs(X*Y)%256;
+      OWOP.world.setPixel(X,Y,[num,num,num]);
     }
   }
 },50);
