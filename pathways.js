@@ -1,4 +1,4 @@
-// These 2 variables are free to change.
+// These 3 variables are free to change.
 var pathThickness = 0.1;
 var zoom = 20;
 var seed = "2763";
