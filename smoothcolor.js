@@ -5,7 +5,7 @@ setInterval(function(){
       coordX = Math.floor(OWOP.mouse.worldX/16+(i-8));
       coordY = Math.floor(OWOP.mouse.worldY/16+(j-8));
       num = Math.abs(coordX*coordY)%256;
-      OWOP.world.setPixel(coordX,coordY,[num,num,num]);
+      OWOP.world.setPixel(coordX,coordY,[num,num+85,num+170]);
     }
   }
 },50);
