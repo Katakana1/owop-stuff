@@ -22,8 +22,9 @@ setInterval(function(){
     for(var i = 0; i < 16; i++){
       var coordX = Math.floor(OWOP.mouse.worldX/16+(i-8));
       var coordY = Math.floor(OWOP.mouse.worldY/16+(j-8));
-      if(isPathPart(coordX,coordY,pathThickness,zoom)){
-        OWOP.world.setPixel(coordX,coordY,[255,0,0])
+      if(isPathPart(coordX,coordY,pathThickness,zoom) && (JSON.stringify(OWOP.world.getPixel(coordX,coordY)) == "[255,255,255]")){
+        OWOP.world.setPixel(coordX,coordY,[255,0,0]);
+        return null;
       }
     }
   }
